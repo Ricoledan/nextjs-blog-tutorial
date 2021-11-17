@@ -1,16 +1,20 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Create Next App Tutorial Code</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read{' '}
+          <Link href="/posts/first-post">
+            <a>this page!</a>
+          </Link>
         </h1>
 
         <p className="description">
@@ -54,8 +58,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
